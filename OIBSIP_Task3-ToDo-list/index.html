@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/edit-icon.png">
+        <title>To Do List</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <main>
+            <div class="box" id="to-do-list">
+                <div class="heading">
+                    <h1>Task</h1>
+                    <button class="delete-all">Delete All</button>
+                </div>
+                <div class="not_comp">
+                    <h2>Pending</h2>
+                </div>
+                <div class="comp">
+                    <h2>Completed</h2>
+                </div>
+                <button id="create1">+</button>
+            </div>
+            <div class="box" id="edit_to-do">
+                <h1>Edit Task</h1>
+                <form>
+                    <input type="text" placeholder="Add a Task" class="edit_task name"  id="edit_task">
+                    <p style="margin-bottom: 0;">Details: </p>
+                    <textarea class="edit_task details" id="edit_details"></textarea>
+                    <P>Deadline: <input type="datetime-local" class="edit_task deadline" id="edit_deadline"></p>
+                    <P>Type: <input type="text" placeholder="Type" list="reas" class="edit_task type" id="edit_type"></p>
+                    <datalist id="reas">
+                        <option value="personal">personal</option>
+                        <option value="work">work</option>
+                        <option value="grocery">grocery list</option>
+                    </datalist>
+                    <button class="submit" id="edit-submit" type="button">Submit</button>            
+                </form>
+            </div>
+            <div class="box" id="Add_to-do">
+                <h1>Add a Task</h1>
+                <form>                    
+                    <input type="text" placeholder="Add a task" class="add-task name" id="add-task-name">
+                    <p style="margin-bottom: 0;">Details: </p>
+                    <textarea rows="5" cols="30" class="edit_task details" id="add_details"></textarea>
+                    <P>Deadline: <input class="add-task deadline" type="datetime-local"id="deadline"></P>
+                    <P>Type: <input class="add-task type" type="text" list="reas" placeholder="Type" id="Type"></P>
+                    <datalist id="reas">
+                        <option value="personal">personal</option>
+                        <option value="work">work</option>
+                        <option value="grocery">grocery list</option>
+                    </datalist>
+                    <button class="submit" id="task-submit" type="button">Submit</button> 
+                </form>
+            </div>
+            
+            <div class="box" id="task-detail">
+                <div class="heading">
+                    <h1>Task Details</h1>
+                    <button class="Done"></button>
+                </div> 
+                <div class="task">
+                   
+                    
+                </div>
+                <div class="button-set">
+                    <button id="bttn_edit">Edit Task</button>
+                    <button id="bttn_delete">Delete Task</button>
+                </div>
+            </div>     
+        </main>
+        <footer>
+            <p>By SHERVIN JAISON</p>
+        </footer>
+    </body>
+</html>

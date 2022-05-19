@@ -1,0 +1,185 @@
+@media (max-width:767px){
+    main{
+        flex-direction: column;
+        height: 100%;
+    }
+    .box{
+        min-height: 500px;
+    }
+}
+
+body{
+    color: white;
+    font-family: sans-serif;
+    background-image: url('images/3N5seHR-cool-design-backgrounds.jpg');
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+main{
+    position:absolute;
+    top: 50%;
+    gap: 40px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+main, .box ,.heading, form, .tasks{
+    display: flex;
+}
+
+.box{
+    width: 350px;
+    height: 500px;
+    background: #161616;
+    border-radius: 12px;
+    flex-direction: column;
+}
+form{
+    width: 300px;
+    flex-direction: column;
+    background: #252525;
+    border-radius: 6px;
+}
+
+.name, .task_name, .type{
+    text-align: center;
+}
+.name{
+    width: 200px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #505050;
+    border: none;
+    align-self: center;
+    
+}
+button{
+    border: none;
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    align-self: flex-end;
+}
+input{
+    color: whitesmoke;
+    border: none;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 15px;
+    height: 40px;
+    
+}
+.deadline{
+    width: 172px;
+}
+.details{
+    width: 220px;
+    border-radius: 6px;
+    height: 70px;
+    align-self: end;
+    margin-right: 10px;
+}
+
+.task_name, #create1{
+    font-size: 30px;
+}
+.task_time{
+    text-align: end;
+    margin: 0;
+    color:#505050;
+}
+.tasks{
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: 250px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+h1,form {
+    margin-left: 25px;
+}
+h2{
+    font-size: 20px;
+}
+
+.name::placeholder{
+    font-size: 18px;
+}
+
+.tasks:active, #create1,.submit, .details, input{
+    background: #424242;
+}
+.type{
+    width: 70px;
+    height: 35px;
+    margin: 0 10px;
+}
+.list_time{
+    text-align: end;
+}
+.list_type, .task_dets, .list_time{
+    color: gray;
+}
+.task{
+    width: 250px;
+    margin-left: 50px;
+    position: relative;
+    top: -12%;
+}
+.not_comp,.comp{
+    height: 160px;
+    width: 300px;
+    margin-left: 30px;
+    overflow: auto;
+    overflow-x: auto;
+}
+p{
+    margin-left: 10px;
+}
+.heading{
+    align-items: center;
+    justify-content: space-around;
+}
+.Done{
+    width: 100px;
+    color: #0074e0;
+    background: transparent;
+    align-self: center;
+}
+.button-set{
+    background: #252525;
+    align-self: flex-end;
+    position: relative;
+    top: 74%;
+    display: none;
+    height: 50px;
+    width: 100%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    justify-content: center;
+}
+#bttn_delete, #bttn_edit{
+    color: cyan;
+}
+
+#create1, .submit{
+    margin-right: 20px;
+}
+
+#create1{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.submit{
+    margin-bottom: 20px;
+    width: 75px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.delete-all{
+    color: red;
+}
